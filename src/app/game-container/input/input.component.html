@@ -1,0 +1,7 @@
+<input 
+    [disabled]="disableInput" 
+    class="input-group bg-dark text-white" 
+    (input)="onInput($event)"
+    #input
+    onfocus="this.value=''">
+    {{ input.focus() }}

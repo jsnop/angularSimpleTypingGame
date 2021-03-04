@@ -1,0 +1,3 @@
+<app-success [successMessage]="successMessage" *ngIf="matched"></app-success>
+<app-word [currentWord]="currentWord"  *ngIf="!matched"></app-word>
+<app-input (onInputChanged)="compareWords($event)" [disableInput]="matched"></app-input>
